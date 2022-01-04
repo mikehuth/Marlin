@@ -22,7 +22,7 @@
 #pragma once
 
 //JUST uncomment the option for your machine
-// #define V6_330_TITAN_TMC 1
+ #define V6_330_TITAN_TMC 1
 // #define V6_330_TITAN_NO_TMC 1
 // #define V6_330_NO_TITAN_TMC 1
 // #define V6_330_NO_TITAN_NO_TMC 1
@@ -59,7 +59,7 @@
 
 // #define TFT_LVGL_UI
 // #define TFT_CLASSIC_UI
-// #define TFT_COLOR_UI
+ #define TFT_COLOR_UI
 
 #if V6_330_TITAN_TMC
   #define MOTHERBOARD BOARD_CHITU3D_V6
@@ -1194,7 +1194,7 @@
 #if WITH_TMC && WITH_BMG
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 830 }
 #elif WITH_TMC && WITH_TITAN
-  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 764 }
+  #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 786 }
 #elif WITH_TMC && !WITH_TITAN && !WITH_BMG
   #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 186 }
 #elif WITH_TITAN && !WITH_TMC
